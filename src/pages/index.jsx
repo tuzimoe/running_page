@@ -71,7 +71,7 @@ export default () => {
 
   const [viewport, setViewport] = useState({
     width: '100%',
-    height: 400,
+    height: 600,
     ...bounds,
   });
   const changeYear = (y) => {
@@ -81,7 +81,7 @@ export default () => {
     if (viewport.zoom > 3) {
       setViewport({
         width: '100%',
-        height: 400,
+        height: 600,
         ...bounds,
       });
     }
@@ -96,7 +96,7 @@ export default () => {
   useEffect(() => {
     setViewport({
       width: '100%',
-      height: 400,
+      height: 600,
       ...bounds,
     });
     scrollToMap();
