@@ -162,7 +162,7 @@ export default () => {
       <Layout>
         <div className="mb5">
           <div className="w-100">
-            <h1 className="f1 fw9 i">Running</h1>
+            <h1 className="f1 fw9 i">Usagi Running</h1>
           </div>
           {viewport.zoom <= 3 ? <LocationStat runs={activities} location="a" onClick={changeYear} /> : <YearsStat runs={activities} year={year} onClick={changeYear} />}
           <div className="fl w-100 w-70-l">
@@ -204,25 +204,45 @@ const YearsStat = ({ runs, year, onClick }) => {
   let yearsArrayUpdate = yearsArr.slice();
   yearsArrayUpdate = yearsArrayUpdate.filter((x) => x !== year);
   yearsArrayUpdate.unshift(year);
-
+  if (yearsArr.length-1 == 0){
+    return (
+      <div className="fl w-100 w-30-l pb5 pr5-l">
+        <section className="pb4" style={{ paddingBottom: '0rem' }}>
+          <p>
+            我用 App 记录自己跑步 1 年有余，下面列表展示的是
+            {year}
+            的数据
+            <br />
+          </p>
+        </section>
+        <hr color="#e0ed5e" />
+        {yearsArrayUpdate.map((year) => (
+          <YearStat key={year} runs={runs} year={year} onClick={onClick} />
+        ))}
+        <YearStat key="Total" runs={runs} year="Total" onClick={onClick} />
+      </div>
+    );
+  } else {
+    return (
+      <div className="fl w-100 w-30-l pb5 pr5-l">
+        <section className="pb4" style={{ paddingBottom: '0rem' }}>
+          <p>
+            我用 App 记录自己跑步{ yearsArr.length-1 }年有余，下面列表展示的是
+            {year}
+            的数据
+            <br />
+          </p>
+        </section>
+        <hr color="#e0ed5e" />
+        {yearsArrayUpdate.map((year) => (
+          <YearStat key={year} runs={runs} year={year} onClick={onClick} />
+        ))}
+        <YearStat key="Total" runs={runs} year="Total" onClick={onClick} />
+      </div>
+    );
+  }
   // for short solution need to refactor
-  return (
-    <div className="fl w-100 w-30-l pb5 pr5-l">
-      <section className="pb4" style={{ paddingBottom: '0rem' }}>
-        <p>
-          我用 App 记录自己跑步{yearsArr.length-1}年有余，下面列表展示的是
-          {year}
-          的数据
-          <br />
-        </p>
-      </section>
-      <hr color="red" />
-      {yearsArrayUpdate.map((year) => (
-        <YearStat key={year} runs={runs} year={year} onClick={onClick} />
-      ))}
-      <YearStat key="Total" runs={runs} year="Total" onClick={onClick} />
-    </div>
-  );
+  
 };
 
 const LocationStat = ({ runs, onClick }) => (
@@ -237,7 +257,7 @@ const LocationStat = ({ runs, onClick }) => (
         Yesterday you said tomorrow.
       </p>
     </section>
-    <hr color="red" />
+    <hr color="#e0ed5e" />
     <LocationSummary key="locationsSummary" />
     <CitiesStat />
     <PeriodStat />
@@ -293,7 +313,7 @@ const YearStat = ({ runs, year, onClick }) => {
           <Stat value={avgHeartRate} description=" Avg Heart Rate" />
         )}
       </section>
-      <hr color="red" />
+      <hr color="#e0ed5e" />
     </div>
   );
 };
@@ -306,7 +326,7 @@ const LocationSummary = () => (
       <Stat value={provinces.length} description=" 个省份" />
       <Stat value={Object.keys(cities).length} description=" 个城市" />
     </section>
-    <hr color="red" />
+    <hr color="#e0ed5e" />
   </div>
 );
 
@@ -320,7 +340,7 @@ const CitiesStat = () => {
           <Stat key={city} value={city} description={` ${(distance / 1000).toFixed(0)} KM`} citySize={3} />
         ))}
       </section>
-      <hr color="red" />
+      <hr color="#e0ed5e" />
     </div>
   );
 };
@@ -335,7 +355,7 @@ const PeriodStat = () => {
           <Stat key={period} value={period} description={` ${times} Runs`} citySize={3} />
         ))}
       </section>
-      <hr color="red" />
+      <hr color="#e0ed5e" />
     </div>
   );
 };
@@ -372,6 +392,7 @@ const RunMap = ({
       {...viewport}
       mapStyle="mapbox://styles/mapbox/dark-v9"
       onViewportChange={setViewport}
+      // zoom="12"
       onLoad={addControlHandler}
       mapboxApiAccessToken={MAPBOX_TOKEN}
     >
