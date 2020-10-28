@@ -7,8 +7,8 @@ const NotFoundPage = () => (
     <p>This page doesn&#39;t exist.</p>
     <p className="moon-gray">
       If you think it should, please send me an email at{" "}
-      <a className="moon-gray b" href="mailto:zouzou0208@gmail.com">
-          zouzou0208@gmail.com
+      <a className="moon-gray b" href="mailto:a@tuzi.moe">
+          a@tuzi.moe
       </a>
       .
     </p>
