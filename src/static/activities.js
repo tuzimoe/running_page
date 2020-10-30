@@ -40,6 +40,20 @@ const activities = [
     "average_heartrate": null,
     "average_speed": 1.1294702425594372,
     "streak": 2
+  },
+  {
+    "run_id": 1604065945011,
+    "name": "run from gpx",
+    "distance": 2094.0289157163934,
+    "moving_time": "0:27:48.989000",
+    "type": "Run",
+    "start_date": "2020-10-30 13:52:25",
+    "start_date_local": "2020-10-31 02:52:25",
+    "location_country": "23, Noel Williams Place, Windsor Park, Upper Harbour, Auckland, 0732, New Zealand",
+    "summary_polyline": "|uf_Favoi`@_CoCIkCu@}Be@S{CvI_@dDiA~CJjCkBvA}@lD_AvAeGtEgHzCwLy@qDtGoG|EmKiDN}BPD",
+    "average_heartrate": null,
+    "average_speed": 1.2546690935149323,
+    "streak": 1
   }
 ];
 
