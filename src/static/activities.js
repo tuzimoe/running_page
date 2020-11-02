@@ -54,6 +54,20 @@ const activities = [
     "average_heartrate": null,
     "average_speed": 1.2546690935149323,
     "streak": 1
+  },
+  {
+    "run_id": 1604215277998,
+    "name": "run from gpx",
+    "distance": 4213.628023037366,
+    "moving_time": "0:57:21.004000",
+    "type": "Run",
+    "start_date": "2020-11-01 07:21:17",
+    "start_date_local": "2020-11-01 20:21:17",
+    "location_country": "2/134, Arran Road, Pinehill, Hibiscus and Bays, Auckland, 0630, New Zealand",
+    "summary_polyline": "|ed_Fekni`@~JdD~GaFnDoGjB_@~Hf@rEkBZ\\r@QvGkFfC_GvAUZcBYkB|FmSdA`@l@xFlAdA\\dBJQcCgD]oDw@qAe@CaF~RCrDkBl@gAvD}A|BoFtD_EbCeBVgLaAgDpGaHfFaK}COe@\\gBb@V_@i@b@l@",
+    "average_heartrate": null,
+    "average_speed": 1.2245344739609036,
+    "streak": 2
   }
 ];
 
