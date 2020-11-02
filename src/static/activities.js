@@ -68,6 +68,34 @@ const activities = [
     "average_heartrate": null,
     "average_speed": 1.2245344739609036,
     "streak": 2
+  },
+  {
+    "run_id": 1604299068002,
+    "name": "run from gpx",
+    "distance": 2238.4848471259074,
+    "moving_time": "0:34:29.999000",
+    "type": "Run",
+    "start_date": "2020-11-02 06:37:48",
+    "start_date_local": "2020-11-02 19:37:48",
+    "location_country": "21, Noel Williams Place, Windsor Park, Upper Harbour, Auckland, 0732, New Zealand",
+    "summary_polyline": "luf_Fyvoi`@}AuB_@_DuAaCyBxGoAhH{@xAFbCo@fAw@N}AfFwFrD_AtAqGjCmDMuAo@}D@wEtHaFzDiAEuIiD\\kBt@FWP^x@[WUj@l@yA",
+    "average_heartrate": null,
+    "average_speed": 1.0813941683671862,
+    "streak": 3
+  },
+  {
+    "run_id": 1604319583184,
+    "name": "run from gpx",
+    "distance": 1626.4805623924342,
+    "moving_time": "0:32:21.816000",
+    "type": "Run",
+    "start_date": "2020-11-02 12:19:43",
+    "start_date_local": "2020-11-03 01:19:43",
+    "location_country": "1A, Helvetia Drive, Pinehill, Hibiscus and Bays, Auckland, 0630, New Zealand",
+    "summary_polyline": "zed_F}mni`@AxAhKfDzFoE`@RhC_F~AkArFPsH_@_E~G}GfFyJeE^qBp@Z",
+    "average_heartrate": null,
+    "average_speed": 0.8376079723271588,
+    "streak": 4
   }
 ];
 
