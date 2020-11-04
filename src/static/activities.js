@@ -96,6 +96,34 @@ const activities = [
     "average_heartrate": null,
     "average_speed": 0.8376079723271588,
     "streak": 4
+  },
+  {
+    "run_id": 1604390260048,
+    "name": "run from gpx",
+    "distance": 2061.790197010315,
+    "moving_time": "0:37:52.092000",
+    "type": "Run",
+    "start_date": "2020-11-03 07:57:40",
+    "start_date_local": "2020-11-03 20:57:40",
+    "location_country": "2, Helvetia Drive, Pinehill, Hibiscus and Bays, Auckland, 0630, New Zealand",
+    "summary_polyline": "bfd_Fwmni`@CvAhK`DdGqE|D_H`Ci@`Id@tEqBOdAeBbA{D`@aJ{@oElH}FlEeKkDHiCj@\\",
+    "average_heartrate": null,
+    "average_speed": 0.9074413346864101,
+    "streak": 4
+  },
+  {
+    "run_id": 1604445828002,
+    "name": "run from gpx",
+    "distance": 2297.069948026342,
+    "moving_time": "0:29:39",
+    "type": "Run",
+    "start_date": "2020-11-03 23:23:48",
+    "start_date_local": "2020-11-04 12:23:48",
+    "location_country": "Afrikaanse Christian Church (North Shore) / East Coast Bays Leisure Centre, 12, Bute Road, Browns Bay, Hibiscus and Bays, Auckland, 0630, New Zealand",
+    "summary_polyline": "txa_F}_qi`@CtNr@|@dJAt@b@VfM`@nB`ApAn@FrAoDnBQdMvPbBrCtApEvCrAdGrM~OdDb@QV{A|@B",
+    "average_heartrate": null,
+    "average_speed": 1.2912141360462857,
+    "streak": 5
   }
 ];
 
