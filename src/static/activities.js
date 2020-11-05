@@ -124,6 +124,34 @@ const activities = [
     "average_heartrate": null,
     "average_speed": 1.2912141360462857,
     "streak": 5
+  },
+  {
+    "run_id": 1604479968086,
+    "name": "run from gpx",
+    "distance": 2078.9418188914015,
+    "moving_time": "0:20:43.915000",
+    "type": "Run",
+    "start_date": "2020-11-04 08:52:48",
+    "start_date_local": "2020-11-04 21:52:48",
+    "location_country": "19, Noel Williams Place, Windsor Park, Upper Harbour, Auckland, 0732, New Zealand",
+    "summary_polyline": "rtf_F_xoi`@iAeBCmBaAkCs@YwFfTRtBoB|AuA`EaBpB}J`HcFn@cG{@cAp@wDhGa@WiGhE{JgDTyB`@j@",
+    "average_heartrate": null,
+    "average_speed": 1.6712892913835764,
+    "streak": 5
+  },
+  {
+    "run_id": 1604547899325,
+    "name": "run from gpx",
+    "distance": 2828.6863131933633,
+    "moving_time": "0:42:28.674000",
+    "type": "Run",
+    "start_date": "2020-11-05 03:44:59",
+    "start_date_local": "2020-11-05 16:44:59",
+    "location_country": "Constellation Park & Ride, Northern Busway, Windsor Park, Upper Harbour, Auckland, 0732, New Zealand",
+    "summary_polyline": "p_i_Fcumi`@mA_DfAeB_As@kE~EQIcSig@_IxFu@vC[jG{BxHgDbGyDpDO~@u@HcF`FiFz@kDN{Dc@Mj@Wq@aFLN`Ai@jGV^bAg@fAd@",
+    "average_heartrate": null,
+    "average_speed": 1.1098658805297827,
+    "streak": 6
   }
 ];
 
